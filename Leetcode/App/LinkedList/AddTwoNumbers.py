@@ -16,3 +16,6 @@ class Solution:
             tmp.next = ListNode(int(i))
             tmp = tmp.next
         return final.next
+
+#Leetcode 2
+
