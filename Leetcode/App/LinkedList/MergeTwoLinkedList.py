@@ -5,7 +5,8 @@ class ListNode:
          self.val = val
          self.next = next
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    @staticmethod
+    def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         head1 = list1
         head2 = list2
         dummy = ListNode(0)
