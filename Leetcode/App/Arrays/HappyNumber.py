@@ -7,7 +7,7 @@ def isHappy(n: int) -> bool:
         n = sum([int(i) ** 2 for i in str(n)])
     return True
 
-def isHappy(self, n: int) -> bool:
+def isHappy2(self, n: int) -> bool:
     def nxt(x: int) -> int:
         return sum((int(i) ** 2 for i in str(x)))
     slow = n
