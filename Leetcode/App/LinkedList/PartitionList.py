@@ -1,3 +1,8 @@
+from typing import Optional
+
+from Leetcode.App.Arrays.ReverseLinkedList import ListNode
+
+
 class Solution:
     def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
         before = ListNode(0, head)
