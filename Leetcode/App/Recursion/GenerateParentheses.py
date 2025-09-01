@@ -13,5 +13,9 @@ def generateParenthesis(self, n: int) -> List[str]:
         rec(0, 0 , "")
         return res
 
+#if left is less than n means we have room to add '(' to s
+# if right less than left that means we can add ')' to s
+# if s == n * 2: we reach a valid pair with valid combination (base case)
+#append it to res
 
 #22. Generate Parentheses
