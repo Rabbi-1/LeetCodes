@@ -18,3 +18,7 @@ class Solution:
                 return True
         return False
 #141. Linked List Cycle
+
+# Time complexity: The time complexity of the code is O(n) because the fast pointer will
+# meet the slow pointer in a linear number of steps
+# Space complexity: The space complexity is 0( 1 ).
