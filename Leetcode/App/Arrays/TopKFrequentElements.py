@@ -1,5 +1,19 @@
-from collections import Counter
+from typing import List
 
-nums = [1, 1, 1, 2, 2, 3]
-count = Counter(nums)
-print(count)
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        count = {}
+
+        for num in nums:
+            count[num] = 1 + count.get(num, 0)
+
+        arr = []
+        for num, counter in count.items():
+            arr.append([counter, num])
+        arr.sort()
+
+        res = []
+        while len(res) < k:
+            res.append(arr.pop()[1])
+        return res
