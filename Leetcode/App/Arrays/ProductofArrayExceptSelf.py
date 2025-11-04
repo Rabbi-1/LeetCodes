@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1] * (len(nums))
@@ -10,6 +13,20 @@ class Solution:
             res[i] *= postfix
             postfix *= nums[i]
         return res
+
+    class Solution:
+        def productExceptSelf2(self, nums: List[int]) -> List[int]:
+            n = len(nums)
+            res = [0] * n
+            for i in range(n):
+                product = 1
+                for j in range(n):
+                    if i == j:
+                        continue
+                    product *= nums[j]
+                res[i] = product
+
+            return res
 # prefix = 1
 # res = [1, 1, 2, 6]
 # postfix = 4
